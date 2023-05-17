@@ -1,6 +1,8 @@
-const express = require("express");
+import { Request, Response } from "express";
+import express from "express";
+import bodyParser from "body-parser";
+
 const app = express();
-const bodyParser = require("body-parser");
 const port = 8000;
 
 app.use(express.urlencoded({ extended: true }));
